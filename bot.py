@@ -82,6 +82,11 @@ def run_bot():
         talk(info)
         pass
 
+    elif 'where is' in command:
+        wi = command.replace('where is','')
+        pywhatkit.search(wi)
+        pass
+
     elif 'what is' in command:
         wi = command.replace('what is','')
         info = wikipedia.summary(wi, 1)
