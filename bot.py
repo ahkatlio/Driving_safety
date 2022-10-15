@@ -83,8 +83,8 @@ def run_bot():
         pass
 
     elif 'where is' in command:
-        wi = command.replace('where is','')
-        pywhatkit.search(wi)
+        lo = command.replace('where is','')
+        pywhatkit.search(lo)
         pass
 
     elif 'what is' in command:
